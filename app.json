@@ -16,14 +16,14 @@
       "value": ""
     },
     "MODE": {
-      "description": "Enter 'true' for public mode, 'no' for private mode",
+      "description": "Enter 'true' for public mode, 'false' for private mode",
       "required": true,
       "value": "public"
     },
     "OWNER_NUMBER": {
       "description": "Enter the owner's phone number with country code (e.g., +1234567890)",
       "required": true,
-      "value": "+923000000000"
+      "value": "+923253617422"
     },
     "OWNER_NAME": {
       "description": "Enter the owner's name",
@@ -31,39 +31,39 @@
       "value": "Bandaheali"
     },
     "AUTO_STATUS_SEEN": {
-      "description": "Enter 'true' for autoview status, 'no' to disable",
+      "description": "Enter 'true' for autoview status, 'false' to disable",
       "required": false,
       "value": "true"
     },
     "AUTO_READ": {
-      "description": "Enter 'true' for autoread messages, 'no' to disable",
+      "description": "Enter 'true' for autoread messages, 'false' to disable",
       "required": false,
       "value": "true"
     },
     "AUTO_TYPING": {
-      "description": "Enter 'true' for auto typing, 'no' to disable",
+      "description": "Enter 'true' for auto typing, 'false' to disable",
       "required": false,
       "value": "true"
     },
     "AUTO_RECORDING": {
-      "description": "Enter 'true' to show recording audio, 'no' to disable",
+      "description": "Enter 'true' to show recording audio, 'false' to disable",
       "required": false,
-      "value": "no"
+      "value": "false"
     },
     "ALWAYS_ONLINE": {
-      "description": "Enter 'true' to show the bot as always online, 'no' to disable",
+      "description": "Enter 'true' to show the bot as always online, 'false' to disable",
       "required": false,
-      "value": "no"
+      "value": "false"
     },
     "AUTO_BLOCK": {
-      "description": "Enter 'true' to auto-block numbers starting with 212, 'no' to disable",
+      "description": "Enter 'true' to auto-block numbers starting with 212, 'false' to disable",
       "required": false,
-      "value": "no"
+      "value": "false"
     },
     "REJECT_CALL": {
-      "description": "Enter 'true' to reject calls, 'no' to disable",
+      "description": "Enter 'true' to reject calls, 'false' to disable",
       "required": false,
-      "value": "no"
+      "value": "false"
     }
   },
   "buildpacks": [
