@@ -9,11 +9,6 @@
     "stop": "pm2 stop Sarkar-MD",
     "restart": "pm2 restart Sarkar-MD"
   },
-  "keywords": [
-    "Sarkar-md",
-    "whatsapp-bot",
-    "whatsapp md bot"
-  ],
   "author": "Bandaheali",
   "license": "ISC",
   "dependencies": {
