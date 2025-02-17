@@ -1,1 +1,1 @@
-worker: npm install -g pm2 && pm2-runtime start main.js --name Sarkar-MD
+web: npm install pm2 -g && pm2 install ffmpeg && pm2 start main.js --deep-monitoring --attach --name Sarkar-MD
