@@ -1,91 +1,31 @@
 {
-  "name": "Sarkar-MD",
-  "description": "Best Whatsapp bot made by Bandaheali",
-  "logo": "https://telegra.ph/file/fd124f7e9271111c3bcc1.jpg",
-  "keywords": [
-    "whatsapp bot",
-    "automation",
-    "Sarkar-MD"
-  ],
-  "repository": "",
-  "stack": "heroku-24",
+  "name": "SHABAN-MD-V5",
+  "description": "Jᴀᴠᴀsᴄʀɪᴘᴛ Wʜᴀᴛsᴀᴘᴘ Bᴏᴛ Mᴀᴅᴇ Bʏ Mʀ Sʜᴀʙᴀɴ",
+  "logo": "https://i.ibb.co/9N1sJ41/Manul-Ofc-X.jpg",
+  "keywords": ["Mʀ✰Sʜᴀʙᴀɴ"],
+  "success_url": "/",
+
+    "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Paste here session ID that you have scanned",
+      "description": "Put the session-id here.",
       "required": true,
       "value": ""
-    },
-    "MODE": {
-      "description": "Enter 'true' for public mode, 'false' for private mode",
-      "required": true,
-      "value": "public"
-    },
-    "OWNER_NUMBER": {
-      "description": "Enter the owner's phone number with country code (e.g., +1234567890)",
-      "required": true,
-      "value": "+923253617422"
-    },
-    "OWNER_NAME": {
-      "description": "Enter the owner's name",
-      "required": true,
-      "value": "Bandaheali"
-    },
-    "AUTO_STATUS_SEEN": {
-      "description": "Enter 'true' for autoview status, 'false' to disable",
-      "required": false,
-      "value": "true"
-    },
-    "AUTO_READ": {
-      "description": "Enter 'true' for autoread messages, 'false' to disable",
-      "required": false,
-      "value": "true"
-    },
-    "AUTO_TYPING": {
-      "description": "Enter 'true' for auto typing, 'false' to disable",
-      "required": false,
-      "value": "true"
-    },
-    "AUTO_RECORDING": {
-      "description": "Enter 'true' to show recording audio, 'false' to disable",
+    },  
+    
+    "
+    "AUTO_REACT": {
+      "description": "Make it true if you want react on every message.",
       "required": false,
       "value": "false"
-    },
-    "ALWAYS_ONLINE": {
-      "description": "Enter 'true' to show the bot as always online, 'false' to disable",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_BLOCK": {
-      "description": "Enter 'true' to auto-block numbers starting with 212, 'false' to disable",
-      "required": false,
-      "value": "false"
-    },
-    "REJECT_CALL": {
-      "description": "Enter 'true' to reject calls, 'false' to disable",
-      "required": false,
-      "value": "false"
-    }
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "basic"
-    }
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql"
-    }
-  ]
+    
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
 }
+  
