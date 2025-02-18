@@ -12,6 +12,22 @@ const OthersCmd = async (m, sock) => {
   const cmd = m.body.startsWith(prefix)
     ? m.body.slice(prefix.length).split(' ')[0].toLowerCase()
     : '';
+
+    // Random quotes list
+  const quotes = [
+    "Believe you can and you're halfway there.",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "The only way to do great work is to love what you do.",
+    "Dream big and dare to fail.",
+    "Don't watch the clock; do what it does. Keep going.",
+    "Act as if what you do makes a difference. It does.",
+    "Start where you are. Use what you have. Do what you can.",
+    "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "You miss 100% of the shots you don't take.",
+    "The best time to plant a tree was 20 years ago. The second best time is now."
+  ];
+
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   // Common function to send message with newsletterJid and externalAdReply
   const sendCommandMessage = async (messageContent) => {
     await sock.sendMessage(
