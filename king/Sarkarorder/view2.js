@@ -25,6 +25,11 @@ const OwnerCmd = async (m, Matrix) => {
     return m.reply('❌ *Only the owner or bot can use this command!*');
   }
 
+  // Restrict VV command to owner or bot
+  if (cmd === 'vv' && !isOwner && !isBot) {
+    return m.reply('❌ *Only the owner or bot can use this command to send media!*');
+  }
+
   try {
     const messageType = Object.keys(msg)[0];
     let buffer;
@@ -41,11 +46,11 @@ const OwnerCmd = async (m, Matrix) => {
 
     let recipient;
     if (cmd === 'vv') {
-      recipient = m.from; // Same chat
+      recipient = m.from; // Same chat, restricted to Owner/Bot only
     } else if (cmd === 'vv2') {
-      recipient = botNumber; // ✅ Bot ke inbox me save hoga
+      recipient = botNumber; // ✅ Bot inbox
     } else if (cmd === 'vv3') {
-      recipient = ownerNumber; // ✅ Owner ke inbox me send hoga
+      recipient = ownerNumber; // ✅ Owner inbox
     }
 
     if (messageType === 'imageMessage') {
@@ -58,8 +63,7 @@ const OwnerCmd = async (m, Matrix) => {
       return m.reply('❌ *Unsupported media type!*');
     }
 
-    return m.reply(`✅ *View Once message unlocked and sent to ${cmd === 'vv' ? 'this chat' : cmd === 'vv2' ? 'bot inbox' : 'owner'}!*`);
-
+    // No reply to user about the action
   } catch (error) {
     console.error(error);
     await m.reply('❌ *Failed to process View Once message!*');
