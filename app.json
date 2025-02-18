@@ -13,7 +13,6 @@
       "value": ""
     },  
     
-    "
     "AUTO_REACT": {
       "description": "Make it true if you want react on every message.",
       "required": false,
