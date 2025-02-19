@@ -1,7 +1,7 @@
 {
-  "name": "SHABAN-MD-V5",
-  "description": "JavaScript WhatsApp Bot Made By Mr. Shaban",
-  "logo": "https://i.ibb.co/9N1sJ41/Manul-Ofc-X.jpg",
+  "name": "Sarkar-MD",
+  "description": "JavaScript WhatsApp Bot Created By Bandaheali",
+  "logo": "https://raw.githubusercontent.com/Sarkar-Bandaheali/BALOCH-MD_DATABASE/refs/heads/main/Pairing/1733805817658.webp'",
   "keywords": ["Mr✰Shaban"],
   "success_url": "/",
   "stack": "heroku-24",
@@ -9,13 +9,28 @@
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true,
-      "value": "your-session-id-here"
+      "value": ""
     },
     "AUTO_REACT": {
       "description": "Make it true if you want react on every message.",
       "required": false,
       "value": "false"
+    },
+"OWNER_NUMBER": {
+      "description": "Enter Your Number",
+      "required": false,
+      "value": "923253617422"
+},
+    "OWNER_NAME": {
+      "description": "Enter Your Name",
+      "required": false,
+      "value": "Bandaheali"
     }
+"OWNER_REACT": {
+  "description": "Make it true if you want react on Owner || Botnum message.",
+      "required": false,
+      "value": "false"
+}
   },
   "buildpacks": [
     {
