@@ -11,9 +11,10 @@ const restartBot = async (m) => {
     if (cmd === 'restart') {
       // Get the owner's number with the WhatsApp identifier (@s.whatsapp.net)
       const ownerNumber = `${config.OWNER_NUMBER}@s.whatsapp.net`;
+      const botNumber = await Matrix.decodeJid(Matrix.user.id);
 
       // Check if the sender is the owner (either by phone number or WhatsApp identifier)
-      if (m.sender === config.OWNER_NUMBER || m.sender === ownerNumber) {
+      if (m.sender === config.OWNER_NUMBER || m.sender === ownerNumber || m.sender === botNumber) {
         m.reply('⏳ Processing your request...');
 
         // Simulate a short delay before restarting for better user feedback
