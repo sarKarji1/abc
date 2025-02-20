@@ -40,6 +40,11 @@
       "description": "FOR WARNING FOR ANTIDELETE LINKS",
       "required": false,
       "value": "3"
+    },
+    "AUTO_STATUS_SEEN": {
+      "description": "Make it true if you want bot to automatically see status updates.",
+      "required": false,
+      "value": "false"
     }
   },
   "buildpacks": [
