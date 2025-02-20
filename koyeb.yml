@@ -1,0 +1,27 @@
+name: Sarkar-MD
+type: web
+regions:
+  - fra
+build:
+  steps:
+    - name: Install Dependencies
+      run: npm install
+run:
+  command: node index.js
+env:
+  - key: SESSION_ID
+    value: ""
+  - key: AUTO_REACT
+    value: "false"
+  - key: OWNER_NUMBER
+    value: "923253617422"
+  - key: OWNER_NAME
+    value: "Bandaheali"
+  - key: OWNER_REACT
+    value: "false"
+  - key: MODE
+    value: "public"
+  - key: ANTILINK_WARNINGS
+    value: "3"
+  - key: AUTO_STATUS_SEEN
+    value: "false"
