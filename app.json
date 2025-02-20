@@ -30,7 +30,17 @@
       "description": "Make it true if you want react on Owner || Botnum message.",
       "required": false,
       "value": "false"
-    }
+    },
+        "MODE": {
+      "description": "Enter MODE EXM=public or private",
+      "required": false,
+      "value": "public"
+     },
+"ANTILINK_WARNINGS": {
+  "description": " FOR WARNING FOR ANTIDELETE LINKS",
+  "required": " false,
+  "value": "3"
+}
   },
   "buildpacks": [
     {
