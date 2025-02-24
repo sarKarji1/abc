@@ -7,7 +7,7 @@ RUN git clone https://github.com/sarKarji1/abc.git /root/abc
 WORKDIR /root/abc
 
 # First try using yarn install, then install pm2 globally via npm
-RUN yarn install
+RUN npm install
 
 # Install pm2 globally if needed
 RUN npm install -g pm2
