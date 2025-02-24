@@ -1,22 +1,7 @@
 FROM node:lts-buster
-
-# Clone the repository
 RUN git clone https://github.com/sarKarji1/abc.git /root/abc
-
-# Set the working directory
 WORKDIR /root/abc
-
-# First try using yarn install, then install pm2 globally via npm
-RUN npm install
-
-# Install pm2 globally if needed
-RUN npm install -g pm2
-
-# Copy all files to the container
+RUN npm install && npm install -g pm2 || yarn install --network-concurrency 1
 COPY . .
-
-# Expose port
 EXPOSE 9090
-
-# Start the application
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
